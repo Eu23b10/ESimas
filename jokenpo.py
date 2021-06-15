@@ -10,7 +10,7 @@ win.geometry("400x400")
 win.resizable(False,False)
 win.configure(bg="grey")
 
-#dar vida ocomputador
+#definindo as opcoes pro ocomputador
 opcoes     = ("PEDRA", "PAPEL", "TESOURA")
 #Funcoes
 def pedra():
@@ -42,12 +42,11 @@ def tesoura():
     	status = "YOU WIN"
     	tk.Label(win, text=f"VOCE VENCEU, COMPUTADOR JOGOU {(opcoes[computador])}", bg="green").place(x=50,y=160,width=300,height=200)
     
-#command=lambda:def()
 """Butons"""
 tk.Button(win, text="PEDRA",   bg="white", fg="red", command=lambda:pedra()).place(x=50,y=50,width=100,height=100)
 tk.Button(win, text="PAPEL",   bg="white", fg="blue", command=lambda:papel()).place(x=150,y=50,width=100,height=100)
 tk.Button(win, text="TESOURA", bg="white", fg="green", command=lambda:tesoura()).place(x=250,y=50,width=100,height=100)
-"""Tela de retorno"""
+"""Inicio com JOKENPO na tela de retorto"""
 tk.Label(win, text="JOKENPO").place(x=50,y=160,width=300,height=200)
 
 
